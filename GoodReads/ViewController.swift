@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  GoodReads
-//
-//  Created by Piotr Antkiewicz on 17.05.24.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
