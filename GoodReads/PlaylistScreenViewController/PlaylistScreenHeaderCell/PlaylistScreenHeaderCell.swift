@@ -1,8 +1,3 @@
 import UIKit
 
-class PlaylistScreenHeaderCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-}
+class PlaylistScreenHeaderCell: UITableViewCell {}

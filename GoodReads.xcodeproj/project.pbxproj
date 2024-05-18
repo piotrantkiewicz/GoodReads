@@ -15,6 +15,8 @@
 		AE3F20FD2BF77FB6005CA603 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AE3F20FC2BF77FB6005CA603 /* Base */; };
 		AE3F21092BF786E2005CA603 /* PlaylistScreenHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F21072BF786E2005CA603 /* PlaylistScreenHeaderCell.swift */; };
 		AE3F210A2BF786E2005CA603 /* PlaylistScreenHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE3F21082BF786E2005CA603 /* PlaylistScreenHeaderCell.xib */; };
+		AE3F210E2BF79FF5005CA603 /* PlaylistScreenBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F210C2BF79FF5005CA603 /* PlaylistScreenBookCell.swift */; };
+		AE3F210F2BF79FF5005CA603 /* PlaylistScreenBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE3F210D2BF79FF5005CA603 /* PlaylistScreenBookCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AE3F20FE2BF77FB6005CA603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE3F21072BF786E2005CA603 /* PlaylistScreenHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistScreenHeaderCell.swift; sourceTree = "<group>"; };
 		AE3F21082BF786E2005CA603 /* PlaylistScreenHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistScreenHeaderCell.xib; sourceTree = "<group>"; };
+		AE3F210C2BF79FF5005CA603 /* PlaylistScreenBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistScreenBookCell.swift; sourceTree = "<group>"; };
+		AE3F210D2BF79FF5005CA603 /* PlaylistScreenBookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistScreenBookCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +88,19 @@
 			isa = PBXGroup;
 			children = (
 				AE3F21052BF784F1005CA603 /* PlaylistScreenHeaderCell */,
+				AE3F210B2BF79FD0005CA603 /* PlaylistScreenBookCell */,
 				AE3F20F42BF77FB5005CA603 /* PlaylistScreenViewController.swift */,
 			);
 			path = PlaylistScreenViewController;
+			sourceTree = "<group>";
+		};
+		AE3F210B2BF79FD0005CA603 /* PlaylistScreenBookCell */ = {
+			isa = PBXGroup;
+			children = (
+				AE3F210C2BF79FF5005CA603 /* PlaylistScreenBookCell.swift */,
+				AE3F210D2BF79FF5005CA603 /* PlaylistScreenBookCell.xib */,
+			);
+			path = PlaylistScreenBookCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +163,7 @@
 			files = (
 				AE3F210A2BF786E2005CA603 /* PlaylistScreenHeaderCell.xib in Resources */,
 				AE3F20FA2BF77FB6005CA603 /* Assets.xcassets in Resources */,
+				AE3F210F2BF79FF5005CA603 /* PlaylistScreenBookCell.xib in Resources */,
 				AE3F20FD2BF77FB6005CA603 /* Base in Resources */,
 				AE3F20F82BF77FB5005CA603 /* Base in Resources */,
 			);
@@ -164,6 +179,7 @@
 				AE3F21092BF786E2005CA603 /* PlaylistScreenHeaderCell.swift in Sources */,
 				AE3F20F52BF77FB5005CA603 /* PlaylistScreenViewController.swift in Sources */,
 				AE3F20F12BF77FB5005CA603 /* AppDelegate.swift in Sources */,
+				AE3F210E2BF79FF5005CA603 /* PlaylistScreenBookCell.swift in Sources */,
 				AE3F20F32BF77FB5005CA603 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

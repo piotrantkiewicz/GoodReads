@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PlaylistScreenBookCell" customModule="GoodReads" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weywardThumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="Hex-HQ-5MF">
+                        <rect key="frame" x="16" y="8" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="0mg-sx-2Wr"/>
+                            <constraint firstAttribute="width" constant="48" id="VJz-Nm-Rkd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weyward" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cf-RD-Z1C">
+                        <rect key="frame" x="80" y="12" width="59" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick-square" translatesAutoresizingMaskIntoConstraints="NO" id="RdF-A6-lp5">
+                        <rect key="frame" x="80" y="34" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Snp-V0-An9"/>
+                            <constraint firstAttribute="width" constant="14" id="lrC-RK-FXK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emilia Hart - 7h 5m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LH-cc-ufM">
+                        <rect key="frame" x="101" y="32" width="117" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more-square" translatesAutoresizingMaskIntoConstraints="NO" id="4na-fj-1zQ">
+                        <rect key="frame" x="357" y="18" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="KSN-Qr-9xB"/>
+                            <constraint firstAttribute="height" constant="28" id="nSt-bD-mK8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.039215686274509803" green="0.047058823529411764" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="RdF-A6-lp5" firstAttribute="top" secondItem="0cf-RD-Z1C" secondAttribute="bottom" constant="6" id="7zK-DE-uia"/>
+                    <constraint firstItem="4na-fj-1zQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BXZ-ml-AD5"/>
+                    <constraint firstAttribute="trailing" secondItem="4na-fj-1zQ" secondAttribute="trailing" constant="8" id="QqE-Ld-hAj"/>
+                    <constraint firstItem="RdF-A6-lp5" firstAttribute="leading" secondItem="Hex-HQ-5MF" secondAttribute="trailing" constant="16" id="Thn-pk-BQg"/>
+                    <constraint firstItem="0cf-RD-Z1C" firstAttribute="leading" secondItem="Hex-HQ-5MF" secondAttribute="trailing" constant="16" id="ayz-4u-z8G"/>
+                    <constraint firstItem="3LH-cc-ufM" firstAttribute="leading" secondItem="RdF-A6-lp5" secondAttribute="trailing" constant="7" id="jd0-t2-7Ph"/>
+                    <constraint firstItem="3LH-cc-ufM" firstAttribute="top" secondItem="0cf-RD-Z1C" secondAttribute="bottom" constant="4" id="nUB-DX-oXy"/>
+                    <constraint firstItem="Hex-HQ-5MF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vWO-lp-uyz"/>
+                    <constraint firstItem="Hex-HQ-5MF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vg7-kh-he6"/>
+                    <constraint firstItem="0cf-RD-Z1C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="viG-wh-EZ4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorLbl" destination="3LH-cc-ufM" id="0sH-Uv-Qhn"/>
+                <outlet property="bookThumbnailImageView" destination="Hex-HQ-5MF" id="YBz-GA-cqt"/>
+                <outlet property="titleLbl" destination="0cf-RD-Z1C" id="WjF-da-g54"/>
+            </connections>
+            <point key="canvasLocation" x="127" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="more-square" width="28" height="28"/>
+        <image name="tick-square" width="14" height="14"/>
+        <image name="weywardThumbnail" width="48" height="48"/>
+    </resources>
+</document>
