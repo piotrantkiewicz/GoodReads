@@ -25,6 +25,17 @@ class PlaylistScreenViewController: UIViewController {
         tableView.register(UINib(nibName: "PlaylistScreenHeaderCell", bundle: nil), forCellReuseIdentifier: "PlaylistScreenHeaderCell")
         tableView.register(UINib(nibName: "PlaylistScreenBookCell", bundle: nil), forCellReuseIdentifier: "PlaylistScreenBookCell")
     }
+    
+    func present(with bookDetails: Book) {
+        let bookDetailsViewController = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(identifier: "BookDetailViewController") as! BookDetailViewController
+        
+        bookDetailsViewController.bookDetails = bookDetails
+        
+        bookDetailsViewController.modalPresentationStyle = .fullScreen
+        
+        present(bookDetailsViewController, animated: true)
+    }
 
     private func myBooks() -> [Book] {
         return [
@@ -69,6 +80,13 @@ extension PlaylistScreenViewController: UITableViewDataSource {
 }
 
 extension PlaylistScreenViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let bookDetails = dataSource[indexPath.row]
+        present(with: bookDetails)
+        
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return indexPath.section == 0 ? 321 : 64
     }

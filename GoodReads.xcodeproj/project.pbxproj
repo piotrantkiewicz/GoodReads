@@ -17,6 +17,8 @@
 		AE3F210A2BF786E2005CA603 /* PlaylistScreenHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE3F21082BF786E2005CA603 /* PlaylistScreenHeaderCell.xib */; };
 		AE3F210E2BF79FF5005CA603 /* PlaylistScreenBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F210C2BF79FF5005CA603 /* PlaylistScreenBookCell.swift */; };
 		AE3F210F2BF79FF5005CA603 /* PlaylistScreenBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE3F210D2BF79FF5005CA603 /* PlaylistScreenBookCell.xib */; };
+		AE3F21122BF8C503005CA603 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F21112BF8C503005CA603 /* BookDetailViewController.swift */; };
+		AEEC120C2BF95103002312D2 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC120B2BF95103002312D2 /* UIView+CornerRadius.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		AE3F21082BF786E2005CA603 /* PlaylistScreenHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistScreenHeaderCell.xib; sourceTree = "<group>"; };
 		AE3F210C2BF79FF5005CA603 /* PlaylistScreenBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistScreenBookCell.swift; sourceTree = "<group>"; };
 		AE3F210D2BF79FF5005CA603 /* PlaylistScreenBookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistScreenBookCell.xib; sourceTree = "<group>"; };
+		AE3F21112BF8C503005CA603 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		AEEC120B2BF95103002312D2 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 		AE3F20EF2BF77FB5005CA603 /* GoodReads */ = {
 			isa = PBXGroup;
 			children = (
+				AEEC120A2BF950F1002312D2 /* Util */,
+				AE3F21102BF8C4D3005CA603 /* BookDetailViewController */,
 				AE3F21062BF78608005CA603 /* PlaylistScreenViewController */,
 				AE3F20F02BF77FB5005CA603 /* AppDelegate.swift */,
 				AE3F20F22BF77FB5005CA603 /* SceneDelegate.swift */,
@@ -101,6 +107,22 @@
 				AE3F210D2BF79FF5005CA603 /* PlaylistScreenBookCell.xib */,
 			);
 			path = PlaylistScreenBookCell;
+			sourceTree = "<group>";
+		};
+		AE3F21102BF8C4D3005CA603 /* BookDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AE3F21112BF8C503005CA603 /* BookDetailViewController.swift */,
+			);
+			path = BookDetailViewController;
+			sourceTree = "<group>";
+		};
+		AEEC120A2BF950F1002312D2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AEEC120B2BF95103002312D2 /* UIView+CornerRadius.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +200,10 @@
 			files = (
 				AE3F21092BF786E2005CA603 /* PlaylistScreenHeaderCell.swift in Sources */,
 				AE3F20F52BF77FB5005CA603 /* PlaylistScreenViewController.swift in Sources */,
+				AE3F21122BF8C503005CA603 /* BookDetailViewController.swift in Sources */,
 				AE3F20F12BF77FB5005CA603 /* AppDelegate.swift in Sources */,
 				AE3F210E2BF79FF5005CA603 /* PlaylistScreenBookCell.swift in Sources */,
+				AEEC120C2BF95103002312D2 /* UIView+CornerRadius.swift in Sources */,
 				AE3F20F32BF77FB5005CA603 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
