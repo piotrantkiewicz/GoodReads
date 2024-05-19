@@ -1,11 +1,5 @@
 import UIKit
 
-struct Book {
-    let image: UIImage
-    let title: String
-    let author: String
-}
-
 class PlaylistScreenViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -39,13 +33,13 @@ class PlaylistScreenViewController: UIViewController {
 
     private func myBooks() -> [Book] {
         return [
-            Book(image: .weywardThumbnail, title: "Weyward", author: "Emilia Hart - 7h 5m"),
-            Book(image: .covenantThumbnail, title: "The Covenant of Water", author: "Abraham Verghese - 2h 3m left"),
-            Book(image: .ladyTansCircleThumbnail, title: "Lady Tan’s Circle of Women", author: "Lisa See - 5h 5m"),
-            Book(image: .theHeavenAndEarthThumbnail, title: "The Heaven & Earth Grocery Store", author: "James McBride - 2h 23m"),
-            Book(image: .theEchoThumbnail, title: "The Echo of Old Books", author: "Barbara Davis - 5h 2m"),
-            Book(image: .theHouseOfEveThumbnail, title: "The House of Eve", author: "Sadeqa Johnson - 4h 5m"),
-            Book(image: .theWindKnowsMyNameThumbnail, title: "The Wind Knows My Name", author: "Isabel Allende - 4h 5m")
+            Book(image: .weywardCover, title: "Weyward", author: "Emilia Hart", timeDuration: "7h 5m"),
+            Book(image: .covenantCover, title: "The Covenant of Water", author: "Abraham Verghese", timeDuration: "2h 3m left"),
+            Book(image: .ladyTansCircleCover, title: "Lady Tan’s Circle of Women", author: "Lisa See", timeDuration: "5h 5m"),
+            Book(image: .theHeavenAndEarthCover, title: "The Heaven & Earth Grocery Store", author: "James McBride", timeDuration: "2h 23m"),
+            Book(image: .theEchoCover, title: "The Echo of Old Books", author: "Barbara Davis", timeDuration: "5h 2m"),
+            Book(image: .theHouseOfEveCover, title: "The House of Eve", author: "Sadeqa Johnson", timeDuration: "4h 5m"),
+            Book(image: .theWindKnowsMyNameCover, title: "The Wind Knows My Name", author: "Isabel Allende", timeDuration: "4h 5m")
         ]
     }
 }

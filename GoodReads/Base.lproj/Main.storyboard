@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -108,7 +109,8 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="message-text" title="196" imagePadding="5">
+                                <buttonConfiguration key="configuration" style="plain" image="message-text" title="196" imagePadding="5" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background"/>
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="13"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -209,12 +211,66 @@
             </objects>
             <point key="canvasLocation" x="913.74045801526711" y="-35.211267605633807"/>
         </scene>
+        <!--Comments View Controller-->
+        <scene sceneID="zNs-vb-dfL">
+            <objects>
+                <viewController storyboardIdentifier="CommentsViewController" id="01M-QR-uA5" customClass="CommentsViewController" customModule="GoodReads" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Vp-zE-BI8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilc-bc-G7m">
+                                <rect key="frame" x="20.000000000000007" y="70" width="119.66666666666669" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hv6-7a-1FK">
+                                <rect key="frame" x="339" y="66" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fXE-Z2-qaj"/>
+                                    <constraint firstAttribute="width" constant="44" id="ug8-nX-rUN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="close-circle"/>
+                                <connections>
+                                    <action selector="closeBtnTapped:" destination="01M-QR-uA5" eventType="touchUpInside" id="TW2-l4-2DP"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fhY-G5-b6R">
+                                <rect key="frame" x="0.0" y="126.66666666666669" width="393" height="725.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.039215686270000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5vg-GD-pkI"/>
+                        <color key="backgroundColor" red="0.039215686274509803" green="0.047058823529411764" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ilc-bc-G7m" firstAttribute="top" secondItem="5vg-GD-pkI" secondAttribute="top" constant="11" id="1TH-Wt-ror"/>
+                            <constraint firstItem="fhY-G5-b6R" firstAttribute="top" secondItem="Ilc-bc-G7m" secondAttribute="bottom" constant="28" id="21Q-5j-iqk"/>
+                            <constraint firstItem="fhY-G5-b6R" firstAttribute="leading" secondItem="5vg-GD-pkI" secondAttribute="leading" id="7bD-Bd-utX"/>
+                            <constraint firstItem="5vg-GD-pkI" firstAttribute="trailing" secondItem="Hv6-7a-1FK" secondAttribute="trailing" constant="10" id="IUR-Bz-o6F"/>
+                            <constraint firstAttribute="bottom" secondItem="fhY-G5-b6R" secondAttribute="bottom" id="N7N-hd-ecA"/>
+                            <constraint firstItem="Hv6-7a-1FK" firstAttribute="top" secondItem="5vg-GD-pkI" secondAttribute="top" constant="7" id="Xnd-Ek-3oQ"/>
+                            <constraint firstItem="Ilc-bc-G7m" firstAttribute="leading" secondItem="5vg-GD-pkI" secondAttribute="leading" constant="20" id="hRq-9e-gHj"/>
+                            <constraint firstItem="5vg-GD-pkI" firstAttribute="trailing" secondItem="fhY-G5-b6R" secondAttribute="trailing" id="u4S-5Z-rfy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fhY-G5-b6R" id="fgb-7o-5Li"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gr-YF-2iS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710.6870229007634" y="-35.211267605633807"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Save" width="86" height="34"/>
         <image name="Share" width="86" height="34"/>
         <image name="arrow-square-left" width="24" height="24"/>
         <image name="backward-15-seconds" width="32" height="32"/>
+        <image name="close-circle" width="44" height="44"/>
         <image name="forward-15-seconds" width="32" height="32"/>
         <image name="message-text" width="21" height="21"/>
         <image name="mirroring-screen" width="24" height="24"/>
@@ -224,5 +280,8 @@
         <image name="previous" width="32" height="32"/>
         <image name="search-normal" width="24" height="24"/>
         <image name="weywardCover" width="329" height="329"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

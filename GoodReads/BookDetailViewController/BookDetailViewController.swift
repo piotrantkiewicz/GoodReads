@@ -12,7 +12,7 @@ class BookDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        commentBtn.setCornerRadius(14.5)
+        commentBtn.setCornerRadius(17)
         if let book = bookDetails {
             configure(with: book)
         }
@@ -29,6 +29,12 @@ class BookDetailViewController: UIViewController {
     }
     
     @IBAction func commentBtnTapped(_ sender: Any) {
+        let commentsViewController = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: "CommentsViewController") as! CommentsViewController
+        
+        commentsViewController.modalPresentationStyle = .fullScreen
+        
+        present(commentsViewController, animated: true)
     }
     
 }

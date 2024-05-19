@@ -1,5 +1,12 @@
 import UIKit
 
+struct Book {
+    let image: UIImage
+    let title: String
+    let author: String
+    let timeDuration: String
+}
+
 class PlaylistScreenBookCell: UITableViewCell {
 
     @IBOutlet weak var bookThumbnailImageView: UIImageView!
@@ -13,6 +20,6 @@ class PlaylistScreenBookCell: UITableViewCell {
     func configure(with book: Book) {
         bookThumbnailImageView.image = book.image
         titleLbl.text = book.title
-        authorLbl.text = book.author
+        authorLbl.text = book.author + " - " + book.timeDuration
     }
 }
