@@ -237,7 +237,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fhY-G5-b6R">
-                                <rect key="frame" x="0.0" y="126.66666666666669" width="393" height="725.33333333333326"/>
+                                <rect key="frame" x="0.0" y="126.66666666666669" width="393" height="643.33333333333326"/>
                                 <color key="backgroundColor" red="0.039215686270000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.039215686270000001" green="0.047058823530000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
@@ -304,7 +304,7 @@
                             <constraint firstItem="tfS-Fs-3u3" firstAttribute="leading" secondItem="5vg-GD-pkI" secondAttribute="leading" id="8IU-7S-4ov"/>
                             <constraint firstItem="tfS-Fs-3u3" firstAttribute="trailing" secondItem="5vg-GD-pkI" secondAttribute="trailing" id="9XV-Ky-pGO"/>
                             <constraint firstItem="5vg-GD-pkI" firstAttribute="trailing" secondItem="Hv6-7a-1FK" secondAttribute="trailing" constant="10" id="IUR-Bz-o6F"/>
-                            <constraint firstAttribute="bottom" secondItem="fhY-G5-b6R" secondAttribute="bottom" id="N7N-hd-ecA"/>
+                            <constraint firstAttribute="bottom" secondItem="fhY-G5-b6R" secondAttribute="bottom" constant="82" id="N7N-hd-ecA"/>
                             <constraint firstAttribute="bottom" secondItem="tfS-Fs-3u3" secondAttribute="bottom" priority="750" id="QdW-NN-8xe"/>
                             <constraint firstItem="Hv6-7a-1FK" firstAttribute="top" secondItem="5vg-GD-pkI" secondAttribute="top" constant="7" id="Xnd-Ek-3oQ"/>
                             <constraint firstItem="Ilc-bc-G7m" firstAttribute="leading" secondItem="5vg-GD-pkI" secondAttribute="leading" constant="20" id="hRq-9e-gHj"/>

@@ -127,7 +127,7 @@ class CommentsViewController: UIViewController {
         guard isCommentValid, let text = commentTextField.text else { return }
         
         let itemTrimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
-        comments.append(Comment(image: .avatar7, author: "jackFlower", datePosted: "now", description: itemTrimmed, likeCount: "0"))
+        comments.append(Comment(image: .avatar7, author: "beanenthusiast64", datePosted: "now", description: itemTrimmed, likeCount: "0"))
         
         let indexPath = IndexPath(row: comments.count - 1, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
