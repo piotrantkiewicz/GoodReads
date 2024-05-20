@@ -15,6 +15,8 @@ class PlaylistScreenBookCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        bookThumbnailImageView.setCornerRadius(4)
     }
     
     func configure(with book: Book) {

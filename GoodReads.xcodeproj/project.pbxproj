@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE07F8FF2BFBA3A500FAC950 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE07F8FE2BFBA3A500FAC950 /* UIColor+hex.swift */; };
 		AE3F20F12BF77FB5005CA603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F20F02BF77FB5005CA603 /* AppDelegate.swift */; };
 		AE3F20F32BF77FB5005CA603 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F20F22BF77FB5005CA603 /* SceneDelegate.swift */; };
 		AE3F20F52BF77FB5005CA603 /* PlaylistScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F20F42BF77FB5005CA603 /* PlaylistScreenViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE07F8FE2BFBA3A500FAC950 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		AE3F20ED2BF77FB5005CA603 /* GoodReads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodReads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3F20F02BF77FB5005CA603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE3F20F22BF77FB5005CA603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				AEEC120B2BF95103002312D2 /* UIView+CornerRadius.swift */,
+				AE07F8FE2BFBA3A500FAC950 /* UIColor+hex.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				AEEC12102BFA4F56002312D2 /* CommentsViewController.swift in Sources */,
 				AEEC12152BFA5119002312D2 /* CommentCell.swift in Sources */,
 				AE3F210E2BF79FF5005CA603 /* PlaylistScreenBookCell.swift in Sources */,
+				AE07F8FF2BFBA3A500FAC950 /* UIColor+hex.swift in Sources */,
 				AEEC120C2BF95103002312D2 /* UIView+CornerRadius.swift in Sources */,
 				AE3F20F32BF77FB5005CA603 /* SceneDelegate.swift in Sources */,
 			);
