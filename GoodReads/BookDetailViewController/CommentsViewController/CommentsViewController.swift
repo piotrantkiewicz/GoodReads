@@ -44,6 +44,7 @@ class CommentsViewController: UIViewController {
     
     private func setCommentButton(enabled isEnabled:Bool) {
         commentBtn.isPointerInteractionEnabled = isEnabled
+        commentBtn.tintColor = isEnabled ? UIColor(hex: "#FFFFFF") : UIColor(hex: "#FFFFFF")?.withAlphaComponent(0.25)
     }
     
     private func configureCommentViewBorder() {

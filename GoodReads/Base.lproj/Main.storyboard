@@ -344,6 +344,6 @@
         <image name="previous" width="32" height="32"/>
         <image name="search-normal" width="24" height="24"/>
         <image name="send" width="24" height="24"/>
-        <image name="weywardCover" width="329" height="329"/>
+        <image name="weywardCover" width="217" height="329"/>
     </resources>
 </document>
