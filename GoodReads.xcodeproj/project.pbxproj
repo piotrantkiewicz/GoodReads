@@ -19,6 +19,8 @@
 		AE3F210E2BF79FF5005CA603 /* PlaylistScreenBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F210C2BF79FF5005CA603 /* PlaylistScreenBookCell.swift */; };
 		AE3F210F2BF79FF5005CA603 /* PlaylistScreenBookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE3F210D2BF79FF5005CA603 /* PlaylistScreenBookCell.xib */; };
 		AE3F21122BF8C503005CA603 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F21112BF8C503005CA603 /* BookDetailViewController.swift */; };
+		AE516D602BFCFF540065A0C1 /* ActionBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE516D5F2BFCFF540065A0C1 /* ActionBarCell.xib */; };
+		AE516D612BFCFF540065A0C1 /* ActionBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE516D5E2BFCFF540065A0C1 /* ActionBarCell.swift */; };
 		AEEC120C2BF95103002312D2 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC120B2BF95103002312D2 /* UIView+CornerRadius.swift */; };
 		AEEC12102BFA4F56002312D2 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC120F2BFA4F56002312D2 /* CommentsViewController.swift */; };
 		AEEC12142BFA5119002312D2 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEC12132BFA5119002312D2 /* CommentCell.xib */; };
@@ -40,6 +42,8 @@
 		AE3F210C2BF79FF5005CA603 /* PlaylistScreenBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistScreenBookCell.swift; sourceTree = "<group>"; };
 		AE3F210D2BF79FF5005CA603 /* PlaylistScreenBookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistScreenBookCell.xib; sourceTree = "<group>"; };
 		AE3F21112BF8C503005CA603 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		AE516D5E2BFCFF540065A0C1 /* ActionBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBarCell.swift; sourceTree = "<group>"; };
+		AE516D5F2BFCFF540065A0C1 /* ActionBarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionBarCell.xib; sourceTree = "<group>"; };
 		AEEC120B2BF95103002312D2 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 		AEEC120F2BFA4F56002312D2 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		AEEC12122BFA5119002312D2 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
@@ -120,10 +124,20 @@
 		AE3F21102BF8C4D3005CA603 /* BookDetailViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AE516D5D2BFCFEE20065A0C1 /* ActionBarCell */,
 				AEEC120E2BFA4F23002312D2 /* CommentsViewController */,
 				AE3F21112BF8C503005CA603 /* BookDetailViewController.swift */,
 			);
 			path = BookDetailViewController;
+			sourceTree = "<group>";
+		};
+		AE516D5D2BFCFEE20065A0C1 /* ActionBarCell */ = {
+			isa = PBXGroup;
+			children = (
+				AE516D5E2BFCFF540065A0C1 /* ActionBarCell.swift */,
+				AE516D5F2BFCFF540065A0C1 /* ActionBarCell.xib */,
+			);
+			path = ActionBarCell;
 			sourceTree = "<group>";
 		};
 		AEEC120A2BF950F1002312D2 /* Util */ = {
@@ -217,6 +231,7 @@
 				AEEC12142BFA5119002312D2 /* CommentCell.xib in Resources */,
 				AE3F20FD2BF77FB6005CA603 /* Base in Resources */,
 				AE3F20F82BF77FB5005CA603 /* Base in Resources */,
+				AE516D602BFCFF540065A0C1 /* ActionBarCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +251,7 @@
 				AE3F210E2BF79FF5005CA603 /* PlaylistScreenBookCell.swift in Sources */,
 				AE07F8FF2BFBA3A500FAC950 /* UIColor+hex.swift in Sources */,
 				AEEC120C2BF95103002312D2 /* UIView+CornerRadius.swift in Sources */,
+				AE516D612BFCFF540065A0C1 /* ActionBarCell.swift in Sources */,
 				AE3F20F32BF77FB5005CA603 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
